@@ -29,7 +29,7 @@ $multiupload=shell_exec(escapeshellcmd($PLOWUP_BIN." -q multiupload ./uploads/".
 $multiupload_url=explode(" ",$multiupload);
 
 //upload to go4up
-$rapidshare=shell_exec(escapeshellcmd($PLOWUP_BIN." -q -a gehaxelt:QRRH3No7PmOKKGI6AVzh rapidshare ./uploads/".$fileId.".gpg"));
+$rapidshare=shell_exec(escapeshellcmd($PLOWUP_BIN." -q -a ".$RS_USER.":".$RS_PW." rapidshare ./uploads/".$fileId.".gpg"));
 $rapidshare_url=explode(" ",$rapidshare);
 
 //update database

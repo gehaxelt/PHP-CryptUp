@@ -7,7 +7,7 @@
 	$DB_PW="";
 	$DB_NAME="CryptUp";
 	//Create Database: create database CryptUp;
-	//Create Table:  create table CryptUp.Uploads ( id varchar(32), gpg_pass varchar(25), filename varchar(255), go4up varchar(255), multiupload varchar(255), mirrorcreator varchar(255) );
+	//Create Table:  create table CryptUp.Uploads ( id varchar(32), gpg_pass varchar(25), filename varchar(255), go4up varchar(255), multiupload varchar(255), rapidshare varchar(255) );
 	mysql_connect($DB_HOST,$DB_USER,$DB_PW);
 	mysql_select_db($DB_NAME);
 	

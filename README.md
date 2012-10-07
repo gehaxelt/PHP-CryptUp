@@ -5,6 +5,8 @@ CryptUp - A small backup service
 2. Requirements
 3. Installation
 
+***Please note:*** This is just a quick-and-dirty project. You may need to edit the source code.***
+
 ##1. Features##
 CryptUp is a small backup service for uploading gpg encrypted file to different file hosters.
 
@@ -58,7 +60,7 @@ Create a new database for CryptUp and also the table.
 
 	mysql -u [USER] -p 
 	mysql> Create Database CryptUp;
-	mysql> Create Table CryptUp.Uploads ( id varchar(32), gpg_pass varchar(25), filename varchar(255), go4up varchar(255), multiupload varchar(255), mirrorcreator varchar(255) );
+	mysql> Create Table CryptUp.Uploads ( id varchar(32), gpg_pass varchar(25), filename varchar(255), go4up varchar(255), multiupload varchar(255), rapidshare varchar(255) );
 	mysql> exit;
 
 If you chose other database or table names, then you have to edit the config.php file again.
